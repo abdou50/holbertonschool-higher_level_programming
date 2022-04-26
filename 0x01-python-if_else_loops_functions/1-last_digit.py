@@ -5,9 +5,10 @@ k = abs(number)
 n = k % 10
 if number < 0:
     n = -n
-if n < 6 and n != 0:
-    print("Last digit of {} is {} and is less than 6 and not 0".format(number, n))
+    print("Last digit of {} ".format(number, n) end="")
+if n > 5:
+    print("greater than 5")
 elif n == 0:
-    print("Last digit of {:d} is {:d} and is 0".format(number, n))
+    print("0")
 else:
-    print("Last digit of {:d} is {:d} and is greater than 5".format(number, n))
+    print("less than 6 and not 0")
