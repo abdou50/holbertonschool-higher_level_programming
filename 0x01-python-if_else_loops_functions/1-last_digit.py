@@ -5,7 +5,7 @@ k = abs(number)
 n = k % 10
 if number < 0:
     n = -n
-    print("Last digit of {} ".format(number, n) end="")
+print("Last digit of {} ".format(number, n) end="")
 if n > 5:
     print("greater than 5")
 elif n == 0:
