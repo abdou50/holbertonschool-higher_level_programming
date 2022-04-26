@@ -1,6 +1,6 @@
 #!/usr/bin/python3
-for item in range(97,123):
-    if item == 101 or item == 113:
+for i in range(97, 123):
+    if chr(i) == 'q' or chr(i) == 'e':
         continue
-    else:
-        print(chr(item), end="")
+    print("{}".format(chr(i)), end="")
+
