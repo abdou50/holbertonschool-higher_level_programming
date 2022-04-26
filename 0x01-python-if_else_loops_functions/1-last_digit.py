@@ -6,7 +6,7 @@ n = k % 10
 if number < 0:
     n = -n
 if n < 6 and n != 0:
-    print("Last digit of {:d} is {:d} and is less than 6 and not 0".format(number, n))
+    print("Last digit of {} is {} and is less than 6 and not 0".format(number, n))
 elif n == 0:
     print("Last digit of {:d} is {:d} and is 0".format(number, n))
 else:
