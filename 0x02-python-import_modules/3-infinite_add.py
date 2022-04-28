@@ -6,4 +6,3 @@ if __name__ == "__main__":
     for i in range(len(m.argv) - 1):
         a += int(m.argv[i + 1])
     print("{}".format(a))
-git
