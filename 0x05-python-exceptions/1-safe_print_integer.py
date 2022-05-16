@@ -3,5 +3,5 @@ def safe_print_integer(value):
     try:
         print("{:d}".format(value))
         return 1 == 1
-    except User.DoesNotExist:
+    except ValueError:
         return 1 == 2
