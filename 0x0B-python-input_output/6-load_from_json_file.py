@@ -3,7 +3,7 @@
 import json
 
 
-def from_json_string(my_str):
+def load_from_json_file(filename):
     """class"""
-    with open(filename, encoding="Utf-8") as fk:
+    with open(filename, mode="w", encoding="Utf-8") as fk:
         return json.load(fk)
