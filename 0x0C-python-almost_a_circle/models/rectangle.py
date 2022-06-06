@@ -1,7 +1,5 @@
 #!/usr/bin/python3
 """class"""
-
-
 from models.base import Base
 
 
