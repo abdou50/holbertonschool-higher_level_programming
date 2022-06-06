@@ -1,16 +1,23 @@
 #!/usr/bin/python3
-"""class"""
-from models.base import Base
+""" Rectangle module """
+from . base import Base
 
 
 class Rectangle(Base):
-    """def functions"""
+    """
+    Rectangle Class
+    """
+
     def __init__(self, width, height, x=0, y=0, id=None):
+        """ Init method
+        Args:
+        """
+        super().__init__(id)
         self.width = width
         self.height = height
         self.x = x
         self.y = y
-        super() .__init__(id)
+
 
     @property
     def width(self):
