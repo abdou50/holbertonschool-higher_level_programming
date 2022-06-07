@@ -85,6 +85,18 @@ class Rectangle(Base):
                 print("#", end="")
             print("")
 
+    def display(self):
+        """methode"""
+
+        for k in range(self.y):
+            print()
+        for i in range(self.height):
+            for li in range(self.x):
+                print(" ", end="")
+            for j in range(self.width):
+                print("#", end="")
+            print("")
+
     def to_dictionary(self):
         """methode"""
 
@@ -94,4 +106,5 @@ class Rectangle(Base):
         dic["height"] = self.height
         dic["x"] = self.x
         dic["y"] = self.y
+
         return dic
