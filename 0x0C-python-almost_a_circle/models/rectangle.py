@@ -80,7 +80,7 @@ class Rectangle(Base):
     def display(self):
         """methode"""
 
-        for i in range(self.hight):
+        for i in range(self.height):
             for j in range(self.width):
                 print("#", end="")
             print("")
