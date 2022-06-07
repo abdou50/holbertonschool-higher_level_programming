@@ -65,15 +65,18 @@ class Rectangle(Base):
 
     def area(self):
         """methode"""
+
         return self.width * self.height
 
     def __str__(self):
         """methode"""
+
         return "[Rectangle] ({}) {}/{} - {}/{}"
         .format(self.id, self.x, self.y, self.width, self.height)
 
     def display(self):
         """methode"""
+
         for i in range(self.hight):
             for j in range(self.width):
                 print("#", end="")
@@ -81,6 +84,7 @@ class Rectangle(Base):
 
     def to_dictionary(self):
         """methode"""
+
         dic = {}
         dic["id"] = self.id
         dic["width"] = self.width
