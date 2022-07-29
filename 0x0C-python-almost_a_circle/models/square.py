@@ -46,15 +46,15 @@ class Square(Rectangle):
                 if i == 1:
                     self.size = args[1]
                 if i == 2:
-                    self.x = args[3]
+                    self.x = args[2]
                 if i == 4:
-                    self.y = args[4]
+                    self.y = args[3]
         else:
             if len(kwargs) > 0:
                 for j in kwargs.keys():
                     if j == "id":
                         self.id = kwargs["id"]
-                    if j == "size:
+                    if j == "size":
                         self.size = kwargs["size"]
                     if j == "x":
                         self.x = kwargs["x"]
