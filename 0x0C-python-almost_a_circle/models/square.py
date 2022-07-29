@@ -37,6 +37,30 @@ class Square(Rectangle):
         self.__width = value
         self.__height = value
 
+    def update(self, *args, **kwargs):
+        """args and kwargs"""
+        if len(args) > 0:
+            for i in range(len(args)):
+                if i == 0:
+                    self.id = args[0]
+                if i == 1:
+                    self.size = args[1]
+                if i == 2:
+                    self.x = args[3]
+                if i == 4:
+                    self.y = args[4]
+        else:
+            if len(kwargs) > 0:
+                for j in kwargs.keys():
+                    if j == "id":
+                        self.id = kwargs["id"]
+                    if j == "size:
+                        self.width = kwargs["width"]
+                    if j == "x":
+                        self.x = kwargs["x"]
+                    if j == "y":
+                        self.y = kwargs["y"]
+
     def to_dictionary(self):
         """set it to dictionary"""
         dic = {}
