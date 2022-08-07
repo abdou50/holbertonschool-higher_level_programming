@@ -14,6 +14,6 @@ if __name__ == "__main__":
     string.execute("SELECT *  states ORDRE BY states.id ASC")
     rowfetch = cursor.fetchall()
     for row in rowfetch:
-       print(row)
+        print(row)
     string.close()
     connected.close()
