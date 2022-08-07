@@ -11,7 +11,7 @@ if __name__ == "__main__":
         db=n.argv[3],
         charset="utf8")
     cur = conn.cursor()
-    cur.execute("SELECT * FROM states ORDER BY id ASC")
+    cur.execute("SELECT * FROM states ORDER BY state.id ASC")
     for row in query_rows:
         print(row)
     cur.close()
