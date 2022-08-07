@@ -2,18 +2,17 @@
 """sql"""
 if __name__ == "__main__":
     import MySQLdb
-    import sys
-    connected = MySQLdb.connect(
+    import sys as n
+    conn = MySQLdb.connect(
         host="localhost",
         port=3306,
-        user=sys.argv[1],
-        password=sys.argv[2],
-        database=sys.argv[3]
-    )
-    string = connected.cursor()
-    string.execute("SELECT *  states ORDRE BY states.id ASC")
-    rowfetch = cursor.fetchall()
-    for row in rowfetch:
+        user=n.argv[1],
+        passwd=n.argv[2],
+        db=n.argv[3],
+        charset="utf8")
+    cur = conn.cursor()
+    cur.execute("SELECT * FROM states ORDER BY id ASC")
+    for row in query_rows:
         print(row)
-    string.close()
-    connected.close()
+    cur.close()
+    conn.close()
