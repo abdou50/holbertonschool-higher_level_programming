@@ -11,7 +11,7 @@ if __name__ == "__main__":
         database=sys.argv[3]
     )
     string = connected.cursor()
-    string.execute("SELECT *  states ORDRE BY states.id")
+    string.execute("SELECT *  states ORDRE BY states.id ASC")
     rowfetch = cursor.fetchall()
     for row in rowfetch:
        print(row)
