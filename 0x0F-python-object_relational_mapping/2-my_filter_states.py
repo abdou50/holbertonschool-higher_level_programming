@@ -2,18 +2,19 @@
 """sql"""
 if __name__ == "__main__":
     import MySQLdb
-    import sys as n
+    from sys import argv
     conn = MySQLdb.connect(
         host="localhost",
         port=3306,
-        user=n.argv[1],
-        passwd=n.argv[2],
-        db=n.argv[3],
+        user=argv[1],
+        passwd=argv[2],
+        db=argv[3],
         charset="utf8")
     cur = conn.cursor()
-    cur.execute("select * from states where name LIKE '{:s}' ORDRE BY id"
+    cur.execute("SELECT * FROM states WHERE name LIKE '{:s}' ORDER BY id ASC"
                 .format(argv[4]))
-    for row in query_rows:
+    i = cur.fetchall()
+    for row in i:
         print(row)
     cur.close()
     conn.close()
