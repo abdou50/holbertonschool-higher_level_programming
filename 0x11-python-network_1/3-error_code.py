@@ -7,5 +7,5 @@ if __name__ == "__main__":
     try:
         with request.urlopen(argv[1]) as response:
             print(response.read().decode('utf-8'))
-    except HTTPError:
-        print('Error code: {}'.format(HTTPError.code))
+    except error.HTTPError as x:
+        print('Error code: {}'.format(x.code))
