@@ -1,6 +1,5 @@
 #!/usr/bin/python3
 """urllib"""
-from urllib import response
 import requests
 from sys import argv
 
