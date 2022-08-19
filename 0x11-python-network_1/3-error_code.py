@@ -1,8 +1,7 @@
 #!/usr/bin/python3
 """urllib"""
-from urllib import request, parse
+from urllib import request, error
 from sys import argv
-from urllib.error import HTTPError
 
 if __name__ == "__main__":
     try:
