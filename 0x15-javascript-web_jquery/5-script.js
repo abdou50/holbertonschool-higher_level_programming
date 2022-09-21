@@ -1,3 +1,3 @@
-$('DIV#red_header').click(function () {
-	$('UL.my_list').append('<li>Item</li>')
+$('DIV#add_item').click(function () {
+	$('UL.my_list').append('<li>Item</li>');
 });
